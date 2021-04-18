@@ -8,11 +8,12 @@ const NavBar = () => {
 				<Navbar.Brand href="/">GREG LAI</Navbar.Brand>
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 				<Navbar.Collapse id="responsive-navbar-nav">
-					<Nav className="mr-auto">
-						<Nav.Link href="#aboutme">ABOUT ME</Nav.Link>
-						<Nav.Link href="#skills">SKILLS</Nav.Link>
-						<Nav.Link href="#projects">PROJECTS</Nav.Link>
-						<Nav.Link href="#contact">CONTACT</Nav.Link>
+					<Nav className="ml-auto">
+						<Nav.Link href="/">HOME</Nav.Link>
+						<Nav.Link href="aboutme">ABOUT ME</Nav.Link>
+						<Nav.Link href="skills">SKILLS</Nav.Link>
+						<Nav.Link href="projects">PROJECTS</Nav.Link>
+						<Nav.Link href="contact">CONTACT</Nav.Link>
 					</Nav>
 				</Navbar.Collapse>
 			</Navbar>
