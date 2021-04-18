@@ -1,9 +1,5 @@
 const Footer = () => {
-	return (
-		<footer className="footer-grey">
-			<p>Copyright © 2021 Greg Lai</p>
-		</footer>
-	);
+	return <footer className="footer-grey">Copyright © 2021 Greg Lai</footer>;
 };
 
 export default Footer;
