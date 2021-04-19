@@ -1,6 +1,7 @@
 // Header Data
-export const headerData = {
-	title: 'Greg',
-	lang: 'en',
-	description: 'Greg Portfolio',
+export const heroData = {
+	title: 'Hello, my name is ',
+	name: 'Greg',
+	subtitle: 'I am a Software Engineer',
+	button: 'Learn More',
 };

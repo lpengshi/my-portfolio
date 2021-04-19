@@ -3,20 +3,20 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import Header from './components/Header';
+import Hero from './components/Hero';
 import NavBar from './components/NavBar';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { PortfolioProvider } from './context/PortfolioContext';
-import { headerData } from './data/data';
+import { heroData } from './data/data';
 
 function App() {
-	const [header, setHeader] = useState({});
+	const [hero, setHero] = useState({});
 	useEffect(() => {
-		setHeader({ ...headerData });
+		setHero({ ...heroData });
 	}, []);
 
 	return (
-		<PortfolioProvider value={{ header }}>
+		<PortfolioProvider value={{ hero }}>
 			<div className="App">
 				<Router>
 					<NavBar />
@@ -26,7 +26,7 @@ function App() {
 								<Contact />
 							</Route>
 							<Route path="/">
-								<Header />
+								<Hero />
 							</Route>
 						</Switch>
 					</div>
