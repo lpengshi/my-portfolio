@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react';
-import PortfolioContext from '../context/PortfolioContext';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-router-dom';
+import PortfolioContext from '../context/PortfolioContext';
 
 const Hero = () => {
 	const { hero } = useContext(PortfolioContext);
@@ -43,7 +43,7 @@ const Hero = () => {
 				distance="30px"
 			>
 				<p>
-					<Link to="aboutme" smooth duration={1000}>
+					<Link to="aboutme" duration={1000}>
 						{button}
 					</Link>
 				</p>
